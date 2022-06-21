@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Watch List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      
+     
+    </main>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+    let month =["Jan","Feb","Mar","Apr","May","June","July","Aug","Spt","Nov","Dec"]
+    let cardInfo = {
+  title: 'City Lights in New York',
+  date: new Date(),
+  comments: 67,
+  subTitle: 'The city that never sleeps.',
+  description:
+    'New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.',
+  category: 'photos',
+  imageURL:
+    'https://images.unsplash.com/photo-1610874933184-7728fd666162?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+};
+
+let section = <section className="container">
+<div className="frame">
+          <figure>
+              <img src={cardInfo.imageURL} alt="#"/>
+          </figure>
+          <div className="date">
+            <p><b>{cardInfo.date.getDate().toString()}</b> 
+              <b>{month[cardInfo.date.getMonth()]}</b></p>
+            </div>
+          <div className="photo">
+            <h3>{cardInfo.category}</h3>
+            </div>
+        </div>
+          <article>
+              <h1>{cardInfo.title}</h1>
+              <h2>{cardInfo.subTitle}</h2>
+              <p>{cardInfo.description}</p>
+              <footer>
+                  <span>〄 6 min ago</span>
+                  <span>{cardInfo.comments+" "+"comments"}</span>
+              </footer>
+          </article>
+      </section>
+      ReactDOM.render(section, document.querySelector("main"))
+    </script>
+  </body>
+</html>
