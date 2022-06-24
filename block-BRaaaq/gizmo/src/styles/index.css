@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* custom */
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* variables */
+.root{
+    --Primary:rgb(89,191,194);
+    --Secondary: white;
+    --text-dark:rgb(40,62,125);
+    --bg-light:rgb(213,229,229);
+    --text-light:rgb(110,113,120);
+}
+/* general classes */
+.center{
+    text-align: center;
+}
+
+.margin{
+    margin: 1rem;
+}
+
+.padding{
+    padding: 1rem;
+}
+main{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+    
+}
+.btn{
+    display: inline-block;
+    padding: 16px;
+    color: var(---Secondary);
+    background-color: var(---Primary);
+}
+/* flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.justify-end{
+    justify-content: end;
+}
+
+.display-flex{
+    display: flex;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+
+.articleSection{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 3rem;
+}
+b{
+    color: #7c1010;
+    font-weight: bolder;
+    font-family:URW Chancery L, cursive;
+}
+site{
+    font-weight: bolder;
+    color: rgb(47, 47, 47);
+    font-family: Georgia, serif;
+    padding: 0.5rem 0;
+}
+.newsArticle{
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    padding: 2rem;
+    margin-bottom:4rem;
+    border-radius: 0.5rem;
+}
+p{
+    padding: 0.8rem 0;
+}
+img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3.3rem;
+}
+.news{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #008080;
+    padding: 1rem 0;
+    font-family: Impact, fantasy;
+}
+p{
+    font-family: American Typewriter, serif;
+    line-height: 1.4;
+}
+h1{
+    font-size: 3rem;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+h2{
+    font-size: 1.5rem;
+    font-family: serif;
+    font-weight: 100;
+   color: #008080;
+}
+article{
+    display: flex;
+    flex-direction: column;
+padding: 0 1rem;
+}
+h3{
+    font-size: 1.1rem;
+    font-family:Times, Times New Roman, serif;
+    color: rgb(56, 56, 56);
+}
+span{
+   font-family: URW Chancery L, cursive;
+   font-weight: 800;
+   color: crimson;
+}
+article a{
+   margin-top: 1rem;
+
+}
+
+nav a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: Apple Chancery, cursive;
+    color: rgb(83, 83, 83);
+}
+nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    font-size: 1rem;
+}
+footer nav{
+    width: 20%;
+}
+footer{
+    font-family: Snell Roundhand, cursive;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
