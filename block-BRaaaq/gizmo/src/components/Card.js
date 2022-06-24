@@ -20,8 +20,14 @@ function Card(props){
 }
 
 Card.PropTyes  ={
-name:PropTyes.string.isRequired,
-url: PropTyes.string.isRequired
+author:PropTyes.string,
+content: PropTyes.string,
+description:PropTyes.string,
+publishedAt:PropTyes.string,
+title:PropTyes.string,
+url:PropTyes.string,
+urlToImage:PropTyes.string,
+
 }
 export default Card
 
